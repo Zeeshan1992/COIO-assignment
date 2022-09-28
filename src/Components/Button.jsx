@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export default function ButtonComponent({ label, svg, buttonType, isActive, onClick }) {
-    console.log(isActive);
     return (
         <Button onClick={onClick} type='Button' buttonType={buttonType} isActive={isActive}>
             {svg && <Icon>{svg}</Icon>}
@@ -13,7 +12,6 @@ export default function ButtonComponent({ label, svg, buttonType, isActive, onCl
 
 
 const Button = styled.button`
-    transition: all 1s;
     ${props => props.isActive === true && props.buttonType === 'secondary' &&`
               background-color: #D9D9D9;
     `}
@@ -21,7 +19,7 @@ const Button = styled.button`
        background-color: #0091FF;
         color: white;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 600;
         height: 30px;
         padding: 0 12px;
@@ -33,9 +31,9 @@ const Button = styled.button`
         height: 35px;
         width: 200px;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
-        margin-bottom: 0.2vw;
+        margin-bottom: 6px;
         &:hover{
             cursor: pointer;
             background-color: #D9D9D9;
@@ -46,12 +44,12 @@ const Button = styled.button`
        background-color: #0091FF2B;
         color: #0091FF;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         padding: 0 15px;
         height: 25px;
         margin-left: auto;
-        width:90px
+        width:110px
     `}
 `
 

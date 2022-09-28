@@ -20,21 +20,20 @@ export default function UserCard(props) {
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    height: 3.5vw;
-    padding: 20px 20px;
+    height: 60px;
 `
 const Portrait = styled.img`
     border-radius: 50%;
-    width: 2.3vw;
-    height: 2.3vw;
-    margin-right: 1vw;
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
 `
 const Name = styled.h3`
-    font-size: 16px;
+    font-size: 0.85rem;
     font-weight: 700;
 `
 const UserName = styled.h4`
-    font-size: 16px;
+    font-size: 0.85rem;
     color: #7D7D7D;
     font-weight: 500;
 `
