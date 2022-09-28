@@ -103,8 +103,7 @@ export default function Coio() {
 
 const Wrapper = styled.div`
     background-color: #E9E9E9;
-    height: 100%;
-
+    min-height: 100vh;
 `
 const Content = styled.div`
     display: flex;

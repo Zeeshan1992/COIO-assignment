@@ -24,6 +24,9 @@ const Button = styled.button`
         height: 30px;
         padding: 0 12px;
         margin-left:auto;
+        &:hover{
+            background-color: #101153c8;
+        }
         `}
     ${props => props.buttonType === 'secondary' && `
         display: flex;
@@ -35,13 +38,12 @@ const Button = styled.button`
         font-weight: 700;
         margin-bottom: 6px;
         &:hover{
-            cursor: pointer;
             background-color: #D9D9D9;
         }
         
     `}
         ${props => props.buttonType === 'tertiary' && `
-       background-color: #0091FF2B;
+        background-color: #0091FF2B;
         color: #0091FF;
         border-radius: 5px;
         font-size: 1rem;
