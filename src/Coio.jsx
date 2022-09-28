@@ -26,15 +26,35 @@ export default function Coio() {
                 </ul>
                 )
                 break;
-        
+            case 'Friends':
+                return(
+                    <div>
+                        <h3>Coming soon</h3>
+                    </div>
+                )
+                break;
+                case 'Random':
+                    return(
+                        <div>
+                            <h3>Coming soon</h3>
+                        </div>
+                    )
+                    break;
+                    case 'Setting':
+                        return(
+                            <div>
+                                <h3>Coming soon</h3>
+                            </div>
+                        )
+                        break;    
             default:
                 break;
         }
     }
     return (
-        <MainDiv>
+        <Wrapper>
             <Header />
-            <Body>
+            <Content>
                 <ul>
                     <li>
                         <Button  onClick={()=> setActiveTab('Home')} buttonType={'secondary'} label={'Home'} isActive={activeTab === 'Home'} svg={<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
@@ -72,8 +92,8 @@ export default function Coio() {
                         )}
                     </ul>
                 </Aside>
-            </Body>
-        </MainDiv>
+            </Content>
+        </Wrapper>
 
 
     )
@@ -81,15 +101,15 @@ export default function Coio() {
 
 
 
-const MainDiv = styled.div`
+const Wrapper = styled.div`
     background-color: #E9E9E9;
-    height: 50vw;
+    height: 100%;
 
 `
-const Body = styled.div`
+const Content = styled.div`
     display: flex;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 185px;
+    padding-right: 165px;
     padding-top: 60px;
     justify-content: space-between;
 
@@ -97,8 +117,9 @@ const Body = styled.div`
 const Aside = styled.div`
     background-color: #fff;
     border-radius: 10px;
-    width: 26vw;
-
+    min-width: 450px;
+    margin-left: 80px;
+    padding: 15px 30px;
 `
 
 
