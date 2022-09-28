@@ -9,7 +9,7 @@ import UserCard from './Components/UserCard'
 export default function Coio() {
     const [activeTab, setActiveTab] = useState('Home')
  
-    function renderTab(){
+    function RenderTab(){
         switch (activeTab) {
             case 'Home':
                 return(
@@ -80,7 +80,7 @@ export default function Coio() {
                         </svg>} />
                     </li>
                 </ul>
-                {renderTab()}
+                {RenderTab()}
 
                 <Aside>
                     <ul>
