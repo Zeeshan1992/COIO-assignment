@@ -47,35 +47,32 @@ export default function Card(props) {
 
 const Wrapper = styled.div`
     background-color: #fff;
-    padding: 1vw 2vw;
+    padding: 25px 35px;
     border-radius: 10px;
-    width: 35vw;
-    margin-bottom: 1vw;
+    margin-bottom: 15px;
+    margin-left: 65px;
 `
 const Portrait = styled.img`
     border-radius: 50%;
-    width: 2.8vw;
-    height: 2.8vw;
-    margin-right: 0.5vw;
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
 `
 const Name = styled.h4`
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 `
 const Role = styled.h4`
-    font-size: 16px;
+    font-size: 1rem;
     color: #7D7D7D;
     font-weight: 500;
 `
 const Content = styled.p`
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 18px;
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
-`
-const Footer = styled.div`
-    height: 16px;
+    margin-top: 12px;
+    margin-bottom: 10px;
 `
 const Icon = styled.button`
     display: flex;
